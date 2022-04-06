@@ -5,6 +5,8 @@ import 'package:splash_screen/login_screen.dart';
 class Splash extends StatefulWidget {
   static const routeName = '/splash-screen';
 
+  const Splash({Key? key}) : super(key: key);
+
   @override
   _SplashState createState() => _SplashState();
 }
@@ -17,7 +19,7 @@ class _SplashState extends State<Splash> {
   }
 
   _navigatetohome() async {
-    await Future.delayed(const Duration(milliseconds: 3000), () {});
+    await Future.delayed(const Duration(seconds: 5), () {});
 
     Navigator.pushReplacement(
       context,
