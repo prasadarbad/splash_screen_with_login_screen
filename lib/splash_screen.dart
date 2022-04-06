@@ -17,7 +17,7 @@ class _SplashState extends State<Splash> {
   }
 
   _navigatetohome() async {
-    await Future.delayed(const Duration(milliseconds: 4500), () {});
+    await Future.delayed(const Duration(milliseconds: 3000), () {});
 
     Navigator.pushReplacement(
       context,
@@ -30,7 +30,7 @@ class _SplashState extends State<Splash> {
     return Scaffold(
         body: Center(
       child: Container(
-        child: Lottie.asset('assets/lottie/89628-rocket-no-blackground.json'),
+        child: Lottie.asset('assets/lottie/40238-happy-coding.json'),
       ),
     ));
   }
